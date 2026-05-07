@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AZIMI PERFUMES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top luxury-nav" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand brand-logo" href="index.html">
+      <i class="fa-solid fa-spray-can-sparkles"></i>
+      <span class="brand-name" data-en="AZIMI" data-fa="AZIMI">AZIMI</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-lg-3">
+        <li class="nav-item"><a class="nav-link active" href="index.html" data-en="Home" data-fa="خانه">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" data-en="About" data-fa="درباره ما">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html" data-en="Products" data-fa="محصولات">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" data-en="Contact" data-fa="تماس">Contact</a></li>
+      </ul>
+      <div class="nav-actions d-flex align-items-center gap-3">
+        <!-- Search -->
+        <div class="nav-search-wrap">
+          <input type="text" id="navSearch" class="nav-search-input" placeholder="Search perfumes…" data-placeholder-en="Search perfumes…" data-placeholder-fa="جستجوی عطر…"/>
+          <i class="fa-solid fa-magnifying-glass nav-search-icon"></i>
+        </div>
+        <!-- Language -->
+        <button class="btn-lang" id="langToggle" title="Switch Language">
+          <i class="fa-solid fa-globe"></i>
+          <span id="langLabel">EN</span>
+        </button>
+        <!-- Dark Mode -->
+        <button class="btn-theme" id="themeToggle" title="Toggle Dark Mode">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <!-- Cart -->
+        <a href="cart.html" class="btn-cart" aria-label="Shopping Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero-section" id="hero">
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="videos/perfume-video5.mp4" type="video/mp4"/>
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content container text-center">
+    <p class="hero-eyebrow" data-en="Maryam Azimi Collection" data-fa="مجموعه مریم عظیمی">Maryam Azimi Collection</p>
+
+    <h1 class="hero-title"
+data-en="A place for <em>special scents</em>"
+data-fa="جایی برای <em>عطرهای ویژه</em>">
+A place for <em>special scents</em>
+</h1>
+    <p class="hero-subtitle" data-en="Discover our curated collection of luxury perfumes crafted for the discerning soul." data-fa="مجموعه انحصاری عطرهای لوکس ما را برای روح‌های انتخاب‌گر کشف کنید.">Discover our curated collection of luxury perfumes crafted for the discerning soul.</p>
+    <div class="hero-buttons d-flex gap-3 justify-content-center flex-wrap">
+      <a href="products.html" class="btn-luxury-primary" data-en="Explore Collection" data-fa="کشف مجموعه">Explore Collection</a>
+      <a href="about.html" class="btn-luxury-outline" data-en="Our Story" data-fa="داستان ما">Our Story</a>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <span></span>
+  </div>
+</section>
+
+<!-- MARQUEE STRIP -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>✦ AZIMI SIGNATURE COLLECTION ON ORDERS OVER $100</span>
+    <span>✦ AZIMI MODERN PERFUMES</span>
+    <span>✦ CREATED WITH ELEGANCE</span>
+    <span>✦ 30-DAY RETURN POLICY</span>
+    <span>✦ WORLDWIDE DELIVERY</span>
+    <span>✦ AZIMI SIGNATURE COLLECTION ON ORDERS OVER $100</span>
+    <span>✦ AZIMI MODERN PERFUMES</span>
+    <span>✦ DESIGNED WITH MODERN ELEGANCE</span>
+    <span>✦ 30-DAY RETURN POLICY</span>
+    <span>✦ CREATED BY MARYAM AZIMI</span>
+  </div>
+</div>
+
+<!--FEATURED PRODUCTS -->
+<section class="section-featured py-5" id="featured">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <p class="section-eyebrow" data-en="Bestsellers" data-fa="پرفروش‌ترین‌ها">Bestsellers</p>
+      <h2 class="section-title" data-en="Our Signature Scents" data-fa="عطرهای امضای ما">Our Signature Scents</h2>
+      <p class="section-sub" data-en="A curated perfume collection with a modern luxury aesthetic." data-fa="مجموعه‌ای از عطرهای منتخب با زیبایی‌شناسی لوکس و مدرن.">A curated perfume collection with a modern luxury aesthetic.</p>
+    </div>
+    <div class="row g-4" id="featuredGrid">
+      <!-- JS will inject featured cards here -->
+    </div>
+    <div class="text-center mt-5">
+      <a href="products.html" class="btn-luxury-primary" data-en="View All Products" data-fa="مشاهده همه محصولات">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER SPLIT -->
+<section class="banner-split">
+  <div class="banner-panel banner-left">
+    <img src="images/perfume15.jpg" alt="Luxury Perfume">
+    <div class="banner-panel-content">
+      <p data-en="For Her" data-fa="برای او">For Her</p>
+      <h3 data-en="Floral & Feminine" data-fa="گلی و زنانه">Floral & Feminine</h3>
+      <a href="products.html?cat=feminine" class="btn-banner" data-en="Shop Now" data-fa="خرید کنید">Shop Now</a>
+    </div>
+  </div>
+  <div class="banner-panel banner-right">
+    <img src="images/perfume4.jpg" alt="Luxury Perfume">
+    <div class="banner-panel-content">
+      <p data-en="For Him" data-fa="برای مردان">For Him</p>
+      <h3 data-en="Bold & Woody" data-fa="جسورانه و چوبی">Bold & Woody</h3>
+      <a href="products.html?cat=masculine" class="btn-banner" data-en="Shop Now" data-fa="خرید کنید">Shop Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO VIDEO SECTION -->
+<section class="video-promo-section">
+  <div class="container">
+    <div class="section-header text-center mb-4">
+      <p class="section-eyebrow" data-en="The Experience" data-fa="تجربه">The Experience</p>
+      <h2 class="section-title" data-en="Crafted With Passion" data-fa="ساخته شده با اشتیاق">Crafted With Passion</h2>
+    </div>
+    <div class="video-promo-wrap">
+      
+<video autoplay muted loop class="card-video">
+  <source src="videos/perfume-video2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us-section py-5">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <p class="section-eyebrow" data-en="Why AZIMI" data-fa="چرا عظیمی">Why AZIMI</p>
+      <h2 class="section-title" data-en="The Difference is Felt" data-fa="تفاوت احساس می‌شود">The Difference is Felt</h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-6">
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+          <h5 data-en="100% Authentic" data-fa="۱۰۰٪ اصل">100% Authentic</h5>
+          <p data-en="Every bottle is certified genuine." data-fa="هر بطری معتبر و اصل است.">Every bottle is certified genuine.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h5 data-en="Fast Delivery" data-fa="تحویل سریع">Fast Delivery</h5>
+          <p data-en="2–5 business days worldwide." data-fa="۲ تا ۵ روز کاری در سراسر جهان.">2–5 business days worldwide.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-rotate-left"></i></div>
+          <h5 data-en="Easy Returns" data-fa="بازگشت آسان">Easy Returns</h5>
+          <p data-en="30-day hassle-free return." data-fa="بازگشت بدون دردسر ۳۰ روزه.">30-day hassle-free return.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+          <h5 data-en="24/7 Support" data-fa="پشتیبانی ۲۴/۷">24/7 Support</h5>
+          <p data-en="Always here when you need us." data-fa="همیشه در کنار شما هستیم.">Always here when you need us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--TESTIMONIALS -->
+<section class="testimonials-section py-5">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <p class="section-eyebrow" data-en="Reviews" data-fa="نظرات">Reviews</p>
+      <h2 class="section-title" data-en="What Our Clients Say" data-fa="مشتریان ما چه می‌گویند">What Our Clients Say</h2>
+    </div>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-card text-center">
+            <div class="stars mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-text">"The scent of Noir de Minuit stayed with me all day. Absolutely mesmerizing. Best purchase I've ever made."</p>
+             <div class="testimonial-author"> 
+              <img src="https://i.pravatar.cc/60?img=1" alt="Arman K." class="rounded-circle"/>
+
+              <strong>Arman K.</strong> — Herat, Afghanistan
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card text-center">
+            <div class="stars mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-text">"The packaging is stunning, the fragrance even more so. AZIMI has become my go-to for luxury gifts."</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/60?img=3" alt="Leon M." class="rounded-circle"/>
+              <strong>Leon M.</strong> — Kabul, Afghanistan
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card text-center">
+            <div class="stars mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <p class="testimonial-text">"Rose Eternelle is everything I ever wanted in a fragrance. Romantic, long-lasting, and uniquely beautiful."</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/60?img=5" alt="Sara N." class="rounded-circle"/>
+              <strong>Sara N.</strong> — Dubai, UAE
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner text-center">
+      <i class="fa-solid fa-envelope-open-text newsletter-icon"></i>
+      <h2 data-en="Join the Inner Circle" data-fa="به دایره داخلی بپیوندید">Join the Inner Circle</h2>
+      <p data-en="Subscribe for exclusive offers, new arrivals, and fragrance stories." data-fa="برای پیشنهادات ویژه، محصولات جدید و داستان‌های عطر مشترک شوید.">Subscribe for exclusive offers, new arrivals, and fragrance stories.</p>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <input type="email" id="newsletterEmail" placeholder="Your email address" data-placeholder-en="Your email address" data-placeholder-fa="آدرس ایمیل شما" required aria-label="Email for newsletter"/>
+        <button type="submit" data-en="Subscribe" data-fa="مشترک شو">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER-->
+<footer class="luxury-footer">
+  <div class="container">
+    <div class="row g-4 footer-top">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <i class="fa-solid fa-spray-can-sparkles"></i>
+            <span>AZIMI</span>
+          </a>
+          <p class="footer-tagline" data-en="Where luxury meets fragrance. Crafting unforgettable scents since 2005." data-fa="جایی که لوکس با عطر ملاقات می‌کند. از سال ۲۰۰۵ تجربه‌های فراموش‌نشدنی خلق می‌کنیم.">Where luxury meets fragrance. Crafting unforgettable scents since 2005.</p>
+          <div class="social-links mt-3">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading" data-en="Quick Links" data-fa="لینک‌های سریع">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html" data-en="Home" data-fa="خانه">Home</a></li>
+          <li><a href="about.html" data-en="About Us" data-fa="درباره ما">About Us</a></li>
+          <li><a href="products.html" data-en="Products" data-fa="محصولات">Products</a></li>
+          <li><a href="cart.html" data-en="My Cart" data-fa="سبد خرید">My Cart</a></li>
+          <li><a href="contact.html" data-en="Contact" data-fa="تماس">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading" data-en="Categories" data-fa="دسته‌بندی‌ها">Categories</h6>
+        <ul class="footer-links">
+          <li><a href="products.html?cat=feminine" data-en="For Her" data-fa="برای او">For Her</a></li>
+          <li><a href="products.html?cat=masculine" data-en="For Him" data-fa="برای مردان">For Him</a></li>
+          <li><a href="products.html?cat=unisex" data-en="Unisex" data-fa="یونی‌سکس">Unisex</a></li>
+          <li><a href="products.html?cat=oud" data-en="Oud Collection" data-fa="کلکسیون عود">Oud Collection</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6 class="footer-heading" data-en="Contact Us" data-fa="تماس با ما">Contact Us</h6>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> <span data-en="Herat, Afghanistan" data-fa="هرات, افغانستان">Herat, Afghanistan</span></li>
+          <li><i class="fa-solid fa-phone"></i> <span data-en="+93 70 123 4567" data-fa="+93 70 123 4567"></span>+93 70 123 4567</span></li>
+          <li><i class="fa-solid fa-envelope"></i> <span data-en="contact@azimiperfumes.com" data-fa="contact@azimiperfumes.com">contact@azimiperfumes.com</span></li>
+          <li><i class="fa-regular fa-clock"></i> <span data-en="Mon–Sat: Sat–Thu: 9:00–18:00" data-fa="دوشنبه تا شنبه: ۹:۰۰ – ۱۸:۰۰">Mon–Sat: 9:00 – 18:00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2026 AZIMI. All rights reserved." data-fa="© 1405 عظیمی. تمامی حقوق محفوظ است.">© 2026 AZIMI. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#" data-en="Privacy Policy" data-fa="سیاست حریم خصوصی">Privacy Policy</a>
+        <a href="#" data-en="Terms of Service" data-fa="شرایط خدمات">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- PRODUCT MODAL -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content luxury-modal">
+      <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body p-0">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <div class="modal-img-wrap">
+              <img id="modalImg" src="" alt="Perfume product image" class="w-100 h-100 object-fit-cover"/>
+            </div>
+          </div>
+          <div class="col-md-7 p-4 d-flex flex-column justify-content-center">
+            <p class="modal-brand" id="modalBrand"></p>
+            <h3 class="modal-name" id="modalName"></h3>
+            <div class="modal-rating" id="modalRating"></div>
+            <p class="modal-desc" id="modalDesc"></p>
+            <div class="modal-meta">
+              <span id="modalSize"></span>
+              <span id="modalCategory"></span>
+            </div>
+            <div class="modal-price" id="modalPrice"></div>
+            <button class="btn-luxury-primary mt-3" id="modalAddCart" data-en="Add to Cart" data-fa="افزودن به سبد">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
