@@ -1581,7 +1581,7 @@ button { cursor: pointer; border: none; background: none; }
   transition: all 0.5s ease-in-out; 
 }
 
-/* استایل برای ویدیو هنگام hover */
+
 .card:hover video {
   transform: scale(1.05); 
   box-shadow: 0 12px 45px rgba(0, 0, 0, 0.15); 
@@ -1594,13 +1594,13 @@ button { cursor: pointer; border: none; background: none; }
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* اضافه کردن سایه به متن */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
-/* استایل برای دکمه‌ها یا محتواهای دیگر */
+
 .card .card-description {
   position: relative;
-  z-index: 1; /* محتوا بالای ویدیو قرار می‌گیرد */
+  z-index: 1; 
   font-size: 1rem;
   color: #fff;
   margin-top: 15px;
@@ -1609,63 +1609,60 @@ button { cursor: pointer; border: none; background: none; }
 
 
 .contact-info-icon {
-  font-size: 2.5rem; /* بزرگتر کردن آیکون */
-  color: #333; /* رنگ آیکون‌ها */
+  font-size: 2.5rem; 
+  color: #333; 
   margin-bottom: 10px;
-  transition: color 0.3s ease, transform 0.3s ease; /* انیمیشن تغییر رنگ و حرکت آیکون */
+  transition: color 0.3s ease, transform 0.3s ease; 
 }
 
-/* تغییر رنگ آیکون‌ها و حرکت آیکون‌ها هنگام hover */
+
 .contact-info-item:hover .contact-info-icon {
-  color: #b5af5b; /* تغییر رنگ آیکون‌ها به سفید */
-  transform: translateY(-5px); /* حرکت آیکون به سمت بالا */
+  color: #b5af5b; 
+  transform: translateY(-5px); 
 }
 
-/* استایل برای عنوان‌های داخل کارت */
+
 .contact-info-item h6 {
-  font-size: 1.25rem; /* اندازه بزرگتر عنوان */
+  font-size: 1.25rem; 
   font-weight: bold;
   color: #333;
-  transition: color 0.3s ease; /* انیمیشن برای تغییر رنگ عنوان */
-  text-align: center; /* مرکزچین کردن عنوان */
+  transition: color 0.3s ease; 
+  text-align: center; 
   margin-bottom: 15px;
 }
 
-/* تغییر رنگ عنوان‌ها هنگام hover */
 .contact-info-item:hover h6 {
-  color:#b5af5b; /* تغییر رنگ عنوان به سفید */
+  color:#b5af5b; 
 }
 
 /* Card Text Overlay */
 .contact-info-item p {
   font-size: 1rem;
   color: #777;
-  transition: color 0.3s ease; /* انیمیشن برای تغییر رنگ متن */
-  text-align: center; /* مرکزچین کردن متن */
+  transition: color 0.3s ease; 
+  text-align: center; 
 }
 
-/* تغییر رنگ متن هنگام hover */
+
 .contact-info-item:hover p {
-  color:#b5af5b; /* تغییر رنگ متن به سفید */
+  color:#b5af5b; 
 }
 
-/* استایل برای لینک‌های اجتماعی */
 .social-links a {
   display: inline-block;
   margin: 0 10px;
   padding: 10px;
   border-radius: 50%;
-  background-color: #333; /* رنگ پس‌زمینه آیکون‌ها */
-  color: #fff; /* رنگ آیکون‌ها */
-  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* انیمیشن برای تغییرات */
-  text-decoration: none; /* حذف خط زیر لینک‌ها */
+  background-color: #333; 
+  color: #fff; 
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  text-decoration: none; 
 }
 
-/* تغییر رنگ آیکون‌ها هنگام hover */
 .social-links a:hover {
-  background-color: #b5af5b; /* رنگ پس‌زمینه زرد هنگام hover */
-  color: #333; /* رنگ آیکون‌ها به تیره تغییر می‌کند */
-  transform: scale(1.1); /* بزرگتر شدن آیکون هنگام hover */
+  background-color: #b5af5b; 
+  color: #333; 
+  transform: scale(1.1); 
 }
 
 
@@ -1684,9 +1681,7 @@ button { cursor: pointer; border: none; background: none; }
 
 
 
-/* =========================================================
-   CONTACT ICON PREMIUM HOVER EFFECT
-========================================================= */
+/* CONTACT ICON PREMIUM HOVER EFFECT*/
 
 .contact-icon,
 .contact-method-icon,
