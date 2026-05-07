@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AZIMI PERFUMES — Products</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top luxury-nav" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand brand-logo" href="index.html">
+      <i class="fa-solid fa-spray-can-sparkles"></i>
+      <span class="brand-name" data-en="AZIMI" data-fa="عظیمی">AZIMI</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="index.html" data-en="Home" data-fa="خانه">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" data-en="About" data-fa="درباره ما">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="products.html" data-en="Products" data-fa="محصولات">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" data-en="Contact" data-fa="تماس">Contact</a></li>
+      </ul>
+      <div class="nav-actions d-flex align-items-center gap-3">
+        <div class="nav-search-wrap">
+          <input type="text" id="navSearch" class="nav-search-input" placeholder="Search perfumes…" data-placeholder-en="Search perfumes…" data-placeholder-fa="جستجوی عطر…"/>
+          <i class="fa-solid fa-magnifying-glass nav-search-icon"></i>
+        </div>
+        <button class="btn-lang" id="langToggle"><i class="fa-solid fa-globe"></i><span id="langLabel">EN</span></button>
+        <button class="btn-theme" id="themeToggle"><i class="fa-solid fa-moon" id="themeIcon"></i></button>
+        <a href="cart.html" class="btn-cart" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-badge" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="images/perfume17.jpg" alt="Perfume Collection" id="hero-image">
+  </div>
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-content text-center">
+    
+<p class="section-eyebrow"
+data-en="Signature Fragrances"
+data-fa="رایحه‌های خاص">
+Signature Fragrances
+</p>
+
+    <h1 class="page-hero-title"
+data-en="AZIMI Collection"
+data-fa="کالکشن عظیمی">
+AZIMI Collection
+</h1>
+</section>
+
+
+<!-- PRODUCTS SECTION -->
+<section class="products-section py-5">
+  <div class="container">
+
+    <!-- Filter & Sort Bar -->
+    <div class="filter-bar d-flex flex-wrap align-items-center gap-3 mb-5">
+      <div class="filter-group">
+        <label for="filterCategory" class="filter-label" data-en="Category:" data-fa="دسته‌بندی:">Category:</label>
+        <select id="filterCategory" class="filter-select">
+          <option value="all" data-en="All" data-fa="همه">All</option>
+          <option value="feminine" data-en="For Her" data-fa="برای او">For Her</option>
+          <option value="masculine" data-en="For Him" data-fa="برای مردان">For Him</option>
+          <option value="unisex" data-en="Unisex" data-fa="یونی‌سکس">Unisex</option>
+          <option value="oud" data-en="Oud" data-fa="عود">Oud</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="sortProducts" class="filter-label" data-en="Sort:" data-fa="مرتب‌سازی:">Sort:</label>
+        <select id="sortProducts" class="filter-select">
+          <option value="default" data-en="Default" data-fa="پیش‌فرض">Default</option>
+          <option value="price-asc" data-en="Price: Low to High" data-fa="قیمت: کم به زیاد">Price: Low to High</option>
+          <option value="price-desc" data-en="Price: High to Low" data-fa="قیمت: زیاد به کم">Price: High to Low</option>
+          <option value="rating" data-en="Best Rated" data-fa="بهترین امتیاز">Best Rated</option>
+        </select>
+      </div>
+      <div class="filter-search ms-auto">
+        <input type="text" id="productSearch" class="filter-search-input" placeholder="Search products…" data-placeholder-en="Search products…" data-placeholder-fa="جستجوی محصولات…" aria-label="Search products"/>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="products-count">
+        <span id="productCountText" data-en="Showing" data-fa="نمایش">Showing</span>
+        <strong id="productCount">0</strong>
+        <span data-en="products" data-fa="محصول">products</span>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="row g-4" id="productsGrid">
+      <!-- Injected by JS -->
+    </div>
+
+    <!-- No Results -->
+    <div id="noResults" class="no-results text-center py-5" style="display:none;">
+      <i class="fa-solid fa-wind fa-3x mb-3"></i>
+      <p data-en="No perfumes found. Try a different search or filter." data-fa="عطری یافت نشد. جستجو یا فیلتر دیگری را امتحان کنید.">No perfumes found. Try a different search or filter.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="luxury-footer">
+  <div class="container">
+    <div class="row g-4 footer-top">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo"><i class="fa-solid fa-spray-can-sparkles"></i><span>AZIMI</span></a>
+          <p class="footer-tagline" data-en="Where elegance becomes identity." data-fa="جایی که ظرافت به هویت تبدیل می‌شود.">Where elegance becomes identity.</p>
+          <div class="social-links mt-3">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading" data-en="Quick Links" data-fa="لینک‌های سریع">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html" data-en="Home" data-fa="خانه">Home</a></li>
+          <li><a href="about.html" data-en="About" data-fa="درباره">About</a></li>
+          <li><a href="products.html" data-en="Products" data-fa="محصولات">Products</a></li>
+          <li><a href="contact.html" data-en="Contact" data-fa="تماس">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading" data-en="Categories" data-fa="دسته‌بندی‌ها">Categories</h6>
+        <ul class="footer-links">
+          <li><a href="products.html?cat=feminine" data-en="For Her" data-fa="برای او">For Her</a></li>
+          <li><a href="products.html?cat=masculine" data-en="For Him" data-fa="برای مردان">For Him</a></li>
+          <li><a href="products.html?cat=unisex" data-en="Unisex" data-fa="یونی‌سکس">Unisex</a></li>
+          <li><a href="products.html?cat=oud" data-en="Oud" data-fa="عود">Oud</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6 class="footer-heading" data-en="Contact Us" data-fa="تماس با ما">Contact Us</h6>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> <span data-en="Herat, Afghanistan" data-fa="هرات, افغانستان">Herat, Afghanistan</span></li>
+          <li><i class="fa-solid fa-envelope"></i> <span data-en="contact@azimiperfumes.com" data-fa="contact@azimiperfumes.com">contact@azimiperfumes.com</span></li>
+                    <li><i class="fa-regular fa-clock"></i> <span data-en="Mon–Sat: Sat–Thu: 9:00–18:00" data-fa="دوشنبه تا شنبه: ۹:۰۰ – ۱۸:۰۰">Mon–Sat: 9:00 – 18:00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2026 AZIMI. All rights reserved." data-fa="© 1405 عظیمی. تمامی حقوق محفوظ است.">© 2026 AZIMI. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- PRODUCT MODAL -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content luxury-modal">
+      <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body p-0">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <div class="modal-img-wrap">
+              <img id="modalImg" src="" alt="Perfume product image" class="w-100 h-100 object-fit-cover"/>
+            </div>
+          </div>
+          <div class="col-md-7 p-4 d-flex flex-column justify-content-center">
+            <p class="modal-brand" id="modalBrand"></p>
+            <h3 class="modal-name" id="modalName"></h3>
+            <div class="modal-rating" id="modalRating"></div>
+            <p class="modal-desc" id="modalDesc"></p>
+            <div class="modal-meta">
+              <span id="modalSize"></span>
+              <span id="modalCategory"></span>
+            </div>
+            <div class="modal-price" id="modalPrice"></div>
+            <button class="btn-luxury-primary mt-3" id="modalAddCart" data-en="Add to Cart" data-fa="افزودن به سبد">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
